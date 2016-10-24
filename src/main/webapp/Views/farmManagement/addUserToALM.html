@@ -1,0 +1,70 @@
+<div class="add_user_left" ng-controller="addUserToAlmController">
+		<div id="warningBox">
+			
+		</div>
+		<div class="custom_column">
+			<div class="four_column" align="right">ALM Farm:</div>
+			<div class="fifteen_column" align="left">
+				<select ng-model="addUser.QCFarm" ng-change="farmListChange()" ng-options="item for item in farmList">
+					
+				</select>
+			</div>
+		</div>
+		
+		<div class="custom_column">
+			<div class="four_column" align="right">User Name:</div>
+			<div class="twelve_column" align="left">
+				<input type="text" ng-model="addUser.QCUsers" ng-change="userNameChange()">
+			</div>
+			<div class="three_column" align="right">
+				<div class="btn-Secondary" id="btnVerify" ng-click="verifyBtnClick()">Verify</div>
+			</div>
+		</div>
+		
+		<div class="readyUserList" id="userList" align="left">
+			
+		</div>
+		
+		<div class="usrename_exp_div">
+			<div class="textDiv">
+				<div class="user_format_exp">
+					<strong>Example:</strong>
+					<p>
+						Jonh.doe@hp.com,<br/>
+						Jonh.doe_admin@hp.com,<br/>
+						jack.london@hisoft.com,54-526-6553,P0987654,<br/>
+						firstName3|lastName3|SEA or empty|Telephone#|SupervisorName cn=builduser,ou=Applications,o=hp.com
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="custom_column" align="center">
+			<div class="sub_body_div">
+				<div class="btn-Secondary" id="btnAddUser" ng-click="addUserBtnClick()">Add User(s) To ALM</div>
+			</div>
+		</div>
+	</div>
+	<div class="add_user_right" align="left">
+		<div class="note_div" align="left">
+			<strong>Note:</strong><br>
+		    <p>To get access ALM Project. You first need to be added to a ALM farm. This is your first step.
+		        Choose the ALM farm, and provide a user list (one user per line) below.
+		    </p><br>
+		    <p>
+		        Note that you can add several types of user accounts:<br>
+		    </p>
+	        <div>
+	            a. An employee who has an hp.com email address. Just provide the hp.com email address. See 
+	            <a href="#">FAQ#2</a>;<br>
+	            b. An employee who has an hp.com email address and wants an additional account to conduct admin tasks. See 
+	            <a href="#">FAQ#54</a><br>
+	            c. A business partner. Two formats are possible. See 
+	            <a href="#">FAQ#33;</a><br>
+	            d. A service account. Provide the common name, as you see it in Directory works. See 
+	            <a href="#">FAQ#27</a>.
+	        </div>
+		    <br>
+		    <p>As a second step. To get access to a ALM project, see self service "2. Get access to a ALM project"/p>
+			</div>
+	</div>
+	<link rel="stylesheet" href="/webssr/css/page/addUserToALM.css" />

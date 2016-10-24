@@ -1,0 +1,6 @@
+@CHARSET "UTF-8";
+.accessToALMPS_base{width:100%; height:auto;}
+.accessToALMPS_left{width:60%; height: 400px; float: left;}
+.accessToALMPS_right{width:40%; height: 400px; float: left;}
+.four_column{padding-right: 20px;}
+.btn_parent_div{width:50%}

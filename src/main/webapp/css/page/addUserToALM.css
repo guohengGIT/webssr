@@ -1,0 +1,13 @@
+.add_user_left{width:60%; height: 400px; float: left;}
+.add_user_right{width: 40%; height: 400px; float: left;}
+.usrename_exp_div{width: 100%; height: 135px;  margin-top: 5px;}
+.four_column{padding-right: 20px;}
+.user_format_exp{width: 100%; text-align: left; line-height: 20px; font-size: 12px; height: 130px; background-color: #e1e1e1; }
+.user_format_exp p{margin-left: 24px;}
+.usrename_exp_div .textDiv{margin-left: 10%; width: 70%;}
+.sub_body_div{width: 50%;}
+.note_div div{margin-left: 4em; }
+.readyUserList{width: 100%; height: auto;display: none}
+.userChild{width: 60%; height: 28px; border: 1px solid #d5d5d5;line-height: 28px; margin-left: 20%; float: left;}
+#userList p {float: left;margin-left: 10px;line-height: 25px;}
+#userList img {float: left;cursor: pointer;margin-top: 2px;}

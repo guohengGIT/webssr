@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html ng-app="routerApp">
+	<head>
+		<meta charset="utf-8" />
+		<title>ALM Self Service</title>
+	</head>
+	
+	<link  rel="stylesheet" href="css/site.css" />
+	<link rel="stylesheet" href="js/framework/bootstrap-3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="js/framework/ng-grid-2.0.12/ng-grid.css">
+    <script src="js/framework/jquery-1.9.1.js"></script>
+    <script src="js/framework/angular-1.3.0.14/angular.js"></script>
+    <script src="js/framework/angular-1.3.0.14/angular-animate.min.js"></script>
+    <script src="js/framework/angular-ui-router.js"></script>
+    <script src="js/framework/ui-bootstrap-tpls-0.11.0.js"></script>
+    <script src="js/framework/ng-grid-2.0.12/ng-grid.debug.js"></script>
+	<script src="js/app.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/Module/farmManagementModule.js"></script>
+	<script src="js/Module/projectMangementModule.js"></script>
+	<script src="js/Module/reportMangementModule.js"></script>
+	<script src="js/Module/almAuditModule.js"></script>
+	<body>
+		<div class="head">
+			<div class="head_title">
+				<div class="head_title_lt">
+					<div class="head_title_It_logo">
+						<img src="img/HP_Blue_72.gif" width="70" height="70">
+					</div>
+					<div class="head_title_It_title"><strong>PDEIT ALM Self Service</strong></div>
+				</div>
+				<div class="head_title_userInfo">
+					<strong>Hello, ASIAPACIFIC\yluo</strong>
+				</div>
+			</div>
+			
+			<!-- Navigation -->
+			<div class="head_menu" ng-controller="MenuManagement">
+				<div ng-click="homeClick()">Home</div><div>|</div>
+				<div ng-click="farmManagementClick()">Farm Management</div><div>|</div>
+				<div ng-click="projectMangementClick()">Project Management</div><div>|</div>
+				<div ng-click="reportMangementClick()">Report Management</div><div>|</div>
+				<div ng-click="almAuditClick()">ALM Audit</div>
+			</div>
+		</div>
+		
+		<!-- Content -->
+		<div class="content" align="center">
+			<div ui-view></div>
+		</div>
+		
+		<!-- Foot -->
+		<div class="foot" align="center">
+			<a href="mailto:PDEIT_ALM_Self_Service_support@hp.com">contact us</a> |
+			<a href="http://www.hp.com/country/us/en/uc/welcome.html">@hp</a><br/>
+			&copy;2015 Hewlett-Packard Development Company, L.P.
+		</div>
+	</body>
+</html>
